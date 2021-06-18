@@ -6,7 +6,7 @@ CONTAINER ?= FIXME
 all:
 
 clean:
-	$(DOCKER) rm -f "$(CONTAINER)" || :
+	$(DOCKER) rm -f "$(CONTAINER)" || :
 
 build:
 	$(DOCKER) build --build-arg APT_PROXY="$(APT_PROXY)" -t $(IMAGE) .
