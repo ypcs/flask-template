@@ -1,4 +1,4 @@
-FROM docker.io/ypcs/flask:latest
+FROM ghcr.io/seravo/flask:latest
 
 ARG APT_PROXY
 
